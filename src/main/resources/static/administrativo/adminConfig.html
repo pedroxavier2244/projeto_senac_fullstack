@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações do Administrador - Painel Administrativo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/adminConfig.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Configurações do Administrador</h1>
+        <a href="./adminIndex.html" class="btn-secondary">Voltar</a>
+    </header>
+    <main>
+        <section id="informacoes">
+            <h2>Informações Pessoais</h2>
+            <form id="user-info-form">
+                <!-- Campos do usuário serão adicionados aqui via JavaScript -->
+            </form>
+        </section>
+
+        <section id="senha">
+            <h2>Alterar Senha</h2>
+            <form id="senha-form">
+                <label for="senha-atual">Senha Atual:</label>
+                <input type="password" id="senha-atual" name="currentPassword" required>
+
+                <label for="nova-senha">Nova Senha:</label>
+                <input type="password" id="nova-senha" name="newPassword" required>
+
+                <button type="submit" class="btn-primary">Alterar Senha</button>
+            </form>
+        </section>
+
+        <section id="configuracoes-gerais">
+            <h2>Configurações Gerais</h2>
+            <form id="configuracoes-gerais-form">
+                <label for="site-titulo">VPC</label>
+                <input type="text" id="site-titulo" name="site-titulo" value="Loja Virtual." required>
+
+                <label for="site-descricao">Descrição do Site:</label>
+                <textarea id="site-descricao" name="site-descricao" required>VPC sports - Vença, Prospere e Conquiste!🦁🗿</textarea>
+
+                <button type="submit" class="btn-primary">Salvar</button>
+            </form>
+        </section>
+    </main>
+</div>
+<script src="./js/adminConfig.js"></script>
+</body>
+</html>
